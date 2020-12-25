@@ -24,6 +24,7 @@
   margin-right: 5px;
 }
 .subtotal > button {
+  transition: 0.3s;
   background-color: #f0c14b;
   border-radius: 2px;
   width: 100%;
@@ -31,4 +32,11 @@
   border: 1px solid;
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
+}
+.subtotal_button {
+  transition: 0.3s;
+}
+.subtotal_button:hover {
+  cursor: pointer;
+  transform: translate(0, -1.5px);
 }

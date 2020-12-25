@@ -42,6 +42,7 @@
   text-align: left;
 }
 .login_signInButton {
+  transition: 0.3s;
   background-color: #f0c14b;
   border-radius: 2px;
   width: 100%;
@@ -50,11 +51,21 @@
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
 }
-.login_registerButton{
-    border-radius: 2px;
-    width: 100%;
-    height: 30px;
-    border: 1px solid;
-    margin-top: 10px;
-    border-color:darkgray;
+.login_signInButton:hover {
+  cursor: pointer;
+  transform: translate(0, -2px);
+}
+.login_registerButton {
+  
+  transition: 0.3s;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: darkgray;
+}
+.login_registerButton:hover{
+  transform:translate(0,1px);
+  background-color:#f0c14b;
 }

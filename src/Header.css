@@ -9,10 +9,14 @@
 }
 
 .header_logo {
+  transition: 0.3s;
   width: 100px;
   object-fit: contain;
   margin: 0 20px;
   margin-top: 18px;
+}
+.header_logo:hover {
+  transform: translate(0, -0.8px);
 }
 
 .header_search {
@@ -30,10 +34,17 @@
 }
 
 .header_searchIcon {
+  transition: 0.3s;
   padding: 5px;
   height: 22px !important;
   background-color: #cd9042;
 }
+
+.header_searchIcon :hover {
+  transform: translate(0, -1px);
+  cursor: pointer;
+}
+
 .header_nav {
   display: flex;
   justify-content: space-evenly;
@@ -41,10 +52,15 @@
 
 .header_option {
   display: flex;
+  transition: 0.3s;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
   color: white;
+}
+.header_option:hover {
+  transform: translate(0, -1px);
+  color: #f0c14b;
 }
 
 .header_optionLineOne {
@@ -60,4 +76,8 @@
   display: flex;
   align-items: center;
   color: white;
+  margin-right: 25px;
+}
+.header_optionBasket:hover {
+  color: #f0c14b;
 }

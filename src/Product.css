@@ -20,11 +20,27 @@
 }
 
 .product > button {
+  transition: 0.3s;
   background-color: #f0c14b;
   border: 1px solid;
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
+}
+.product {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+.product:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transform: translate(0, -10px);
+  
+}
+
+.product > button:hover {
+  cursor: pointer;
+  transform: translate(0, -1px);
+  background-color:rgba(245, 202, 110, 0.932);
 }
 
 .product_rating {

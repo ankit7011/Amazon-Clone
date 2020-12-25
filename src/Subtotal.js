@@ -28,7 +28,10 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"₹ "}
       />
-      <button onClick={(e) => history.push("./payment")}>
+      <button
+        className="subtotal_button"
+        onClick={(e) => history.push("./payment")}
+      >
         Procced to Checkout
       </button>
     </div>

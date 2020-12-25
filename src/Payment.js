@@ -61,7 +61,7 @@ function Payment() {
           
           window.location.reload();
 
-        setSucceeded(true);
+        setSucceeded(true); 
         setError(null);
         setProcessing(false);
 
