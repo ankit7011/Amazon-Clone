@@ -8,7 +8,7 @@ import { CardElement } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./reducer";
 import axios from "./axios";
-import { db } from "./firebase";
+//import { db } from "./firebase";
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
   const history = useHistory();
@@ -39,7 +39,7 @@ function Payment() {
 
   console.log("The Secret Is : ", clientSecret);
 
-  const handleSubmit = async (event) => {
+  /* const handleSubmit = async (event) => {
     event.preventDefault();
     setProcessing(true);
     const payload = await stripe
@@ -75,7 +75,7 @@ function Payment() {
     setDisabled(event.empty);
     setError(event.error ? event.error.message : " ");
   };
-
+ */
   return (
     <div className="payment">
       <div className="payment_container">
@@ -118,8 +118,8 @@ function Payment() {
             <h3>Payment Method</h3>
           </div>
           <div className="payment_details">
-            <form onSubmit={handleSubmit}>
-              <CardElement onChange={handleChange} />
+            <form onSubmit/* ={handleSubmit} */>
+              <CardElement onChange/* ={handleChange} */ />
               <div className="payment_priceContainer">
                 <CurrencyFormat
                   renderText={(value) => <h3>Order Total : {value}</h3>}
