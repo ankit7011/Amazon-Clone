@@ -111,7 +111,6 @@ function Payment() {
             ))}
           </div>
         </div>
-
         {/* Payment Section - Payment Method */}
         <div className="payment_section">
           <div className="payment_title">
